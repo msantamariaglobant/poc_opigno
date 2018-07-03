@@ -21,3 +21,9 @@ RUN rm -rf /var/www/html/*
 COPY apache-drupal.conf /etc/apache2/sites-enabled/000-default.conf
 
 WORKDIR /app
+
+RUN composer create-project drupal-composer/drupal-project:8.x-dev /app --stability dev --no-interaction
+
+RUN mkdir -p /app/config/sync && chown -R www-data:www-data /app/web
+
+RUN composer require drupal/opigno_lms

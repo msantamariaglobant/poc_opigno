@@ -1,0 +1,35 @@
+version: '3'
+services:
+  mysql:
+    image: mysql:5.6
+    container_name: mysql-drupal
+    environment:
+      MYSQL_DATABASE: "drupal"
+      MYSQL_ROOT_PASSWORD: "Drupal"
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    restart: always
+    networks:
+      - drupal_mysql_net
+  drupal:
+    depends_on:
+      - mysql
+    build: .
+    ports:
+      - "8080:80"
+    volumes:
+      - ./app:/app
+    links:
+      - mysql:mysql
+    restart: always
+    networks:
+      - drupal_mysql_net
+
+volumes:
+  mysql_data:
+
+networks:
+  drupal_mysql_net:
+    driver: bridge
