@@ -24,6 +24,10 @@ WORKDIR /app
 
 RUN composer create-project drupal-composer/drupal-project:8.x-dev /app --stability dev --no-interaction
 
-RUN mkdir -p /app/config/sync && chown -R www-data:www-data /app/web
+RUN mkdir -p /app/config/sync && chown -R www-data:www-data /app/web && chmod -R 777 /app/web
 
 RUN composer require drupal/opigno_lms
+
+RUN drush si opigno_lms --db-url=mysql://root:Drupal@mysql/drupal --account-name=admin --account-pass=admin123 -y
+
+RUN chmod -R 776 /app/web
