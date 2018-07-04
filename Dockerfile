@@ -29,8 +29,10 @@ RUN composer require drupal/opigno_lms
 
 RUN mkdir -p /app/config/sync && chown -R www-data:www-data /app/web && chmod -R 777 /app/web
 
-RUN drush si opigno_lms --db-url=mysql://root:Drupal@mysql/drupal --account-name=admin --account-pass=admin123 -y
+RUN drush si opigno_lms --db-url=mysql://root:Drupal@db/drupal --account-name=admin --account-pass=admin123 -y
 
 RUN chmod -R 776 /app/web
+
+WORKDIR /app/web
 
 RUN drush config-export
