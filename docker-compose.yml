@@ -2,7 +2,6 @@ version: '3'
 services:
   db:
     image: mariadb:10.2
-    container_name: db-drupal
     environment:
       MYSQL_DATABASE: "drupal"
       MYSQL_ROOT_PASSWORD: "Drupal"
@@ -21,9 +20,6 @@ services:
       - "8080:80"
     volumes:
       - ./app:/app
-      - ./uploads.ini:/usr/local/etc/php/conf.d/uploads.ini 
-    links:
-      - db:db
     restart: always
     networks:
       - drupal_db_net
