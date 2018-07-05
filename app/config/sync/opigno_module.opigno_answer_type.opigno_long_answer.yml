@@ -1,0 +1,8 @@
+uuid: aaf35c10-4534-4148-a0a9-9e6024e9f667
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: _Z7aJZGLEW26bOvMMTZzCxrLhwQkuYy-dATSl6K52xA
+id: opigno_long_answer
+label: 'Long answer'

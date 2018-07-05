@@ -1,0 +1,23 @@
+uuid: dceaf27c-b586-4edd-9782-2015912a7a0d
+langcode: en
+status: true
+dependencies:
+  module:
+    - private_message
+_core:
+  default_config_hash: QLN9-pUyo6u1ZG-ncOkY4VgNMh-OkKJL9DoPIsB4YrY
+id: private_message.private_message.default
+targetEntityType: private_message
+bundle: private_message
+mode: default
+content:
+  message:
+    type: string_textarea
+    label: hidden
+    settings:
+      placeholder: Message
+      rows: 5
+    region: content
+    third_party_settings: {  }
+    weight: null
+hidden: {  }

@@ -1,0 +1,28 @@
+uuid: d3deb61e-23d5-4687-950c-40077d4b750d
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.opigno_class
+  enforced:
+    config:
+      - user.role.administrator
+_core:
+  default_config_hash: zB6ssC7U2teuUFBltfgzbKng2JjA-2TSweuLh6nhVQQ
+id: opigno_class-a416e6833
+label: 'Super administrator'
+weight: 2
+internal: true
+audience: outsider
+group_type: opigno_class
+permissions_ui: false
+permissions:
+  - 'access content overview'
+  - 'administer group'
+  - 'delete group'
+  - 'edit group'
+  - 'administer members'
+  - 'join group'
+  - 'view group_membership content'
+  - 'view group'
+  - 'access group_node overview'

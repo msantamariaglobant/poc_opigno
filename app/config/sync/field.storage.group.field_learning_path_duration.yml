@@ -1,0 +1,23 @@
+uuid: 16e13446-337f-439e-994a-91953974b6b6
+langcode: en
+status: true
+dependencies:
+  module:
+    - group
+_core:
+  default_config_hash: olE-KyNL6CFtkiiChSrzR5sVhOadjPJgOZ1Cpo_fbrU
+id: group.field_learning_path_duration
+field_name: field_learning_path_duration
+entity_type: group
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

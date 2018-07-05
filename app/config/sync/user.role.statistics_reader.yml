@@ -1,0 +1,12 @@
+uuid: 3756990d-0f1f-4a46-a176-7d5a3529fe71
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 34dvYz1ZdXFhfsOhMH2KD1bdH1VM40uH7fzxHY3PUn4
+id: statistics_reader
+label: 'Statistics manager'
+weight: -7
+is_admin: null
+permissions:
+  - 'view module results'

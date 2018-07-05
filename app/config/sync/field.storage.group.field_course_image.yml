@@ -1,0 +1,32 @@
+uuid: 443b1911-6fd7-40bd-a35d-842390dfd32c
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - group
+    - image
+_core:
+  default_config_hash: khsMSkCFjn-IdX7WVq1h6yd_-B3yZPbdzGhWisMyvfU
+id: group.field_course_image
+field_name: field_course_image
+entity_type: group
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

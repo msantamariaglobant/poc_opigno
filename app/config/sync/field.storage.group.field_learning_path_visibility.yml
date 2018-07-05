@@ -1,0 +1,32 @@
+uuid: a00a013f-67bd-4cae-b932-516a9f011f29
+langcode: en
+status: true
+dependencies:
+  module:
+    - group
+    - options
+_core:
+  default_config_hash: JMMOxmPrmmILHeV-ESAI-hjTXKLGKaUAN33E_oysozM
+id: group.field_learning_path_visibility
+field_name: field_learning_path_visibility
+entity_type: group
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: public
+      label: Public
+    -
+      value: semiprivate
+      label: Semi-private
+    -
+      value: private
+      label: Private
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

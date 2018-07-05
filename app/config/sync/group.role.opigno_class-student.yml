@@ -1,0 +1,19 @@
+uuid: 2157b5c4-220b-4b6f-8c9f-2308f92ff762
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.opigno_class
+_core:
+  default_config_hash: eniUOJaPXrhm_7c7nR1_wPAXJF5Lp8xboel8IuqsEl8
+id: opigno_class-student
+label: Student
+weight: -10
+internal: false
+audience: member
+group_type: opigno_class
+permissions_ui: true
+permissions:
+  - 'view group'
+  - 'leave group'
+  - 'view group_membership content'

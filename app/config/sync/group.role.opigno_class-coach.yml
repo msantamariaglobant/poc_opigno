@@ -1,0 +1,20 @@
+uuid: 009dbdc7-8ac5-4142-9d56-86cff9ed24d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.opigno_class
+_core:
+  default_config_hash: g7l5AXJ8fmC2c138Y4gM5KYEJourTQE_YFqFbGIRACc
+id: opigno_class-coach
+label: Coach
+weight: -9
+internal: false
+audience: member
+group_type: opigno_class
+permissions_ui: true
+permissions:
+  - 'administer members'
+  - 'leave group'
+  - 'view group_membership content'
+  - 'view group'

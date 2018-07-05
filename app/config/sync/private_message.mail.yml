@@ -1,0 +1,5 @@
+message_notification:
+  subject: 'Private message at [site:name]'
+  body: "[user:display-name],\r\n\r\nYou have received a private message at [site:name] from [private_message:author-name]\r\n\r\nThe message is as follows:\r\n\r\n[private_message:message]\r\n\r\nYou can view the entire thread and reply to this message at:\r\n\r\n[private_message_thread:url]\r\n\r\n\r\nThank you,\r\n\r\n--  [site:name]"
+_core:
+  default_config_hash: Y3el8yWm-I245p8Bj3N-XzIKD7vHCB3Vi6rxzSWXYRw

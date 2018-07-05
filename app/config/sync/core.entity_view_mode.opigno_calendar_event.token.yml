@@ -1,0 +1,10 @@
+uuid: b2f8e73c-e17b-414b-bb3e-4782c1bf5d12
+langcode: en
+status: true
+dependencies:
+  module:
+    - opigno_calendar_event
+id: opigno_calendar_event.token
+label: Token
+targetEntityType: opigno_calendar_event
+cache: true

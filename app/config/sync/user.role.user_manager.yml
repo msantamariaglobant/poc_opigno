@@ -1,0 +1,16 @@
+uuid: 08c43ff9-d28b-4d27-af51-865230bb54df
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 39pnOYxrcfirMUiBb8d3SDTAWvUwafllbf7IGYYLckc
+id: user_manager
+label: 'User manager'
+weight: -6
+is_admin: null
+permissions:
+  - 'administer users'
+  - 'create opigno_class group'
+  - 'manage group members in any group'
+  - 'message all groups'
+  - 'message anyone regardless of groups'

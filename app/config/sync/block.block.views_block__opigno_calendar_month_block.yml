@@ -1,0 +1,32 @@
+uuid: ae33edb9-0900-4417-b55b-c980d5fe8227
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.opigno_calendar
+  module:
+    - system
+    - views
+  theme:
+    - platon
+_core:
+  default_config_hash: ZUzgSkVBuoARDKb-noyUsWA5C64eB57M0g8Te2w5PdQ
+id: views_block__opigno_calendar_month_block
+theme: platon
+region: content
+weight: 3
+provider: null
+plugin: 'views_block:opigno_calendar-month_block'
+settings:
+  id: 'views_block:opigno_calendar-month_block'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /user/1
+    negate: false
+    context_mapping: {  }

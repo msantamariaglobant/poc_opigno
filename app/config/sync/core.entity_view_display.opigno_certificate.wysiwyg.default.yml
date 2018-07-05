@@ -1,0 +1,23 @@
+uuid: 6c9aa8ef-c100-44ac-a312-1803abf5469d
+langcode: en
+status: true
+dependencies:
+  module:
+    - opigno_certificate
+    - text
+    - user
+_core:
+  default_config_hash: '-zT8KkRngePXb5oKxAxn6MxsVfSpbx3Xt6avsQ8jYtM'
+id: opigno_certificate.wysiwyg.default
+targetEntityType: opigno_certificate
+bundle: wysiwyg
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,27 @@
+uuid: c3e8914a-741b-4137-a400-2371ae3d66b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.opigno_activity.activity
+    - field.field.opigno_activity.opigno_h5p.opigno_h5p
+    - opigno_module.opigno_activity_type.opigno_h5p
+  module:
+    - h5p
+_core:
+  default_config_hash: '-hEJ7HAdU4Y06cgnpZXfDNkHCGuvTpDLwTo9SPiiES4'
+id: opigno_activity.opigno_h5p.activity
+targetEntityType: opigno_activity
+bundle: opigno_h5p
+mode: activity
+content:
+  opigno_h5p:
+    type: h5p_default
+    weight: 0
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  name: true
+  uid: true

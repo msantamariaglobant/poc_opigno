@@ -1,0 +1,27 @@
+uuid: ced75590-2181-4831-bb58-9ac6049e6a72
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - platon
+_core:
+  default_config_hash: TTWRXviwkkMIe7yOyKrGdKGEOTZh8useJgn3luHbyuU
+id: platon_local_actions
+theme: platon
+region: content
+weight: -10
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: /catalog
+    negate: true
+    context_mapping: {  }

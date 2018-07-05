@@ -1,0 +1,32 @@
+uuid: 2d674f37-003b-40ed-8c18-78f162f38246
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.who_s_new
+  module:
+    - system
+    - views
+  theme:
+    - platon
+_core:
+  default_config_hash: xxGk8ASZECj8U0FS6OPT31TrLCl402VMrL8hr2xiHxw
+id: dashboard_views_block_who_s_new-block_1
+theme: platon
+region: content
+weight: -6
+provider: null
+plugin: 'views_block:who_s_new-block_1'
+settings:
+  id: 'views_block:who_s_new-block_1'
+  label: 'Dashboard: Who''s new'
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

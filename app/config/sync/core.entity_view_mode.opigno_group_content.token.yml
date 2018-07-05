@@ -1,0 +1,12 @@
+uuid: fdfee9b0-6a80-406d-b9a9-ae0467f084d3
+langcode: en
+status: true
+dependencies:
+  module:
+    - opigno_group_manager
+_core:
+  default_config_hash: QIvXGmzojrnEIpkL2Yo8O7tTp7NKNqCI-HCeO92eAMM
+id: opigno_group_content.token
+label: Token
+targetEntityType: opigno_group_content
+cache: true

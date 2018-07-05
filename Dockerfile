@@ -5,8 +5,7 @@ RUN apt-get update && apt-get install -y \
 	git \
 	mysql-client \
 	vim \
-	wget \
-	nano 
+	wget 
 
 RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" && \
 	php composer-setup.php && \
@@ -21,18 +20,6 @@ RUN rm -rf /var/www/html/*
 
 COPY apache-drupal.conf /etc/apache2/sites-enabled/000-default.conf
 
+COPY uploads.ini /usr/local/etc/php/conf.d/uploads.ini 
+
 WORKDIR /app
-
-RUN composer create-project drupal-composer/drupal-project:8.x-dev /app --stability dev --no-interaction
-
-RUN composer require drupal/opigno_lms
-
-RUN mkdir -p /app/config/sync && chown -R www-data:www-data /app/web && chmod -R 777 /app/web
-
-RUN drush si opigno_lms --db-url=mysql://root:Drupal@db/drupal --account-name=admin --account-pass=admin123 -y
-
-RUN chmod -R 776 /app/web
-
-WORKDIR /app/web
-
-RUN drush config-export

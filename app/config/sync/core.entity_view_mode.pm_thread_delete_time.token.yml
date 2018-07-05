@@ -1,0 +1,12 @@
+uuid: 1c3179d2-24cb-4b89-a48b-32705851bdc2
+langcode: en
+status: true
+dependencies:
+  module:
+    - private_message
+_core:
+  default_config_hash: fztoN8P44sHKEnJrmnDhIyPJeRvlpaMsJsPgO99NJXU
+id: pm_thread_delete_time.token
+label: Token
+targetEntityType: pm_thread_delete_time
+cache: true
