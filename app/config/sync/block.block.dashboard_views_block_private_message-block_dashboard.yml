@@ -1,0 +1,32 @@
+uuid: fa5ff6a7-599d-4842-b17e-090a5cbb823a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.private_message
+  module:
+    - system
+    - views
+  theme:
+    - platon
+_core:
+  default_config_hash: 6dA9GubcvEMLH--7gZV5-_KqZz1F2gBDNFqcxuq_Gis
+id: dashboard_views_block_private_message-block_dashboard
+theme: platon
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:private_message-block_dashboard'
+settings:
+  id: 'views_block:private_message-block_dashboard'
+  label: 'Dashboard: Private Message: Dashboard - Last Threads'
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

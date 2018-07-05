@@ -1,0 +1,23 @@
+uuid: 773a0ef0-0fcb-462c-803b-91647f21a25b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.opigno_activity.opigno_allowed_extension
+    - opigno_module.opigno_activity_type.opigno_file_upload
+_core:
+  default_config_hash: FsHS2Z3sWUUlv8IB7uCXpbzlYl_CNDbLTexg9qGhaTU
+id: opigno_activity.opigno_file_upload.opigno_allowed_extension
+field_name: opigno_allowed_extension
+entity_type: opigno_activity
+bundle: opigno_file_upload
+label: 'Allowed extension'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 'doc docx xls xlsx ppt pptx pdf odt ods odp txt'
+default_value_callback: ''
+settings: {  }
+field_type: string

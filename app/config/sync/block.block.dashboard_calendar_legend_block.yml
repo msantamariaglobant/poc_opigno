@@ -1,0 +1,28 @@
+uuid: 92cdd6c5-d0c1-4fe9-bcd0-f7bbe76f7409
+langcode: en
+status: true
+dependencies:
+  module:
+    - calendar
+    - system
+  theme:
+    - platon
+_core:
+  default_config_hash: 5nm-Vk9JcMFViguu4qtscDS1bdD8vEX25cc5LjUwz-w
+id: dashboard_calendar_legend_block
+theme: platon
+region: content
+weight: -3
+provider: null
+plugin: calendar_legend_block
+settings:
+  id: calendar_legend_block
+  label: 'Dashboard: Calendar legend'
+  provider: calendar
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

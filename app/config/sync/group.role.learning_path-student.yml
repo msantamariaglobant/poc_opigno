@@ -1,0 +1,19 @@
+uuid: 81f91aab-ef56-4904-b9f6-87b1bf897856
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.learning_path
+_core:
+  default_config_hash: INVbv3MVuuOjlGdxEJDpIgLuFxA7fiDP3ClcGJJg3o0
+id: learning_path-student
+label: Student
+weight: -10
+internal: false
+audience: member
+group_type: learning_path
+permissions_ui: true
+permissions:
+  - 'view group'
+  - 'update own group_membership content'
+  - 'leave group'

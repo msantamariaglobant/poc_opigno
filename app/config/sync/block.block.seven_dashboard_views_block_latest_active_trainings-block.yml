@@ -1,0 +1,30 @@
+uuid: a011b1c5-9687-4855-95bb-1510bc242dfe
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.latest_active_trainings
+  module:
+    - system
+    - views
+  theme:
+    - seven
+id: seven_dashboard_views_block_latest_active_trainings-block
+theme: seven
+region: header
+weight: 0
+provider: null
+plugin: 'views_block:latest_active_trainings-block'
+settings:
+  id: 'views_block:latest_active_trainings-block'
+  label: 'Dashboard: Latest active trainings'
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

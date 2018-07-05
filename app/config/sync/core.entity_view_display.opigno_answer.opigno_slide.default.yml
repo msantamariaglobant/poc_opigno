@@ -1,0 +1,16 @@
+uuid: ac1995a6-7a25-4dd2-9a81-3a915a951619
+langcode: en
+status: true
+dependencies:
+  config:
+    - opigno_module.opigno_answer_type.opigno_slide
+_core:
+  default_config_hash: s40mTW3y4LA9KbOG2ytkOlYTsY72sV6P5lK1G7Mspd0
+id: opigno_answer.opigno_slide.default
+targetEntityType: opigno_answer
+bundle: opigno_slide
+mode: default
+content: {  }
+hidden:
+  activity: true
+  module: true

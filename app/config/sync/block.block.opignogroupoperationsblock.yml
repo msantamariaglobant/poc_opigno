@@ -1,0 +1,30 @@
+uuid: f55ba85d-22f1-41bf-a882-81e522937a1f
+langcode: en
+status: true
+dependencies:
+  module:
+    - group
+    - opigno_learning_path
+  theme:
+    - platon
+_core:
+  default_config_hash: cpMXwn_VP6R5chWeY1lRNZIgPLC1muEHGKfXLklsqos
+id: opignogroupoperationsblock
+theme: platon
+region: content
+weight: -1
+provider: null
+plugin: group_operations_lp
+settings:
+  id: group_operations_lp
+  label: 'Opigno Group Operations Block'
+  provider: opigno_learning_path
+  label_display: '0'
+visibility:
+  group_type:
+    id: group_type
+    group_types:
+      learning_path: learning_path
+    negate: false
+    context_mapping:
+      group: '@group.group_route_context:group'

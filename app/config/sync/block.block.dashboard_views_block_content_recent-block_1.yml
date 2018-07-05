@@ -1,0 +1,32 @@
+uuid: cbe20cca-94ab-4e91-97e8-0759eb5996b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.content_recent
+  module:
+    - system
+    - views
+  theme:
+    - platon
+_core:
+  default_config_hash: t6iHZTgeyLZGi_P-MKu6nKN-0lV_4C2Hb9QvVqd8vVE
+id: dashboard_views_block_content_recent-block_1
+theme: platon
+region: content
+weight: -8
+provider: null
+plugin: 'views_block:content_recent-block_1'
+settings:
+  id: 'views_block:content_recent-block_1'
+  label: 'Dashboard: Recent content'
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

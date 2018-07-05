@@ -1,0 +1,26 @@
+uuid: 09b8fe94-c21e-493e-a534-1a46cf77e6f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.opigno_class
+_core:
+  default_config_hash: EfTxZ_q3XsBGOp3Uv-XYOLVbV2OsPZBd4KKsB_OwHbE
+id: opigno_class-admin
+label: Admin
+weight: -8
+internal: false
+audience: member
+group_type: opigno_class
+permissions_ui: true
+permissions:
+  - 'access content overview'
+  - 'administer group'
+  - 'delete group'
+  - 'edit group'
+  - 'administer members'
+  - 'update own group_membership content'
+  - 'leave group'
+  - 'view group_membership content'
+  - 'view group'
+  - 'access group_node overview'

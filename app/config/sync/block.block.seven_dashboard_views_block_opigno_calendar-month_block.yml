@@ -1,0 +1,30 @@
+uuid: 8dfcc94b-8085-4bda-b16f-a3d9825a4712
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.opigno_calendar
+  module:
+    - system
+    - views
+  theme:
+    - seven
+id: seven_dashboard_views_block_opigno_calendar-month_block
+theme: seven
+region: header
+weight: 0
+provider: null
+plugin: 'views_block:opigno_calendar-month_block'
+settings:
+  id: 'views_block:opigno_calendar-month_block'
+  label: 'Dashboard: Opigno calendar block'
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

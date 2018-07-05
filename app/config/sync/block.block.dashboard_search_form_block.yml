@@ -1,0 +1,28 @@
+uuid: 019cd638-b038-44e7-a046-7a20b7a4b718
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+    - system
+  theme:
+    - platon
+_core:
+  default_config_hash: gOzU9oWzNmZ3WTXK0XSEtxdY7Exl8tuPD2zLVePdrL4
+id: dashboard_search_form_block
+theme: platon
+region: content
+weight: -7
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Dashboard: Search form'
+  provider: search
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

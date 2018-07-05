@@ -1,0 +1,27 @@
+uuid: e5c2c9fa-50ba-451c-bcd6-3dd11362bfd6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.pm_thread_preview
+    - field.field.user.user.field_created_by
+    - field.field.user.user.user_picture
+  module:
+    - user
+_core:
+  default_config_hash: lAL5MbFM7WRzD-Qd18Sh79jHRM5UVOqlltPqpru_80Q
+id: user.user.pm_thread_preview
+targetEntityType: user
+bundle: user
+mode: pm_thread_preview
+content:
+  linked_username:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_created_by: true
+  member_for: true
+  private_message_link: true
+  user_picture: true
